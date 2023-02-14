@@ -1,0 +1,57 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "link_saver",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "link_saver (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "link_saver (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "links_api",
+            "cwd": "packages\\links_api",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "links_repository",
+            "cwd": "packages\\links_repository",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sqflite_links",
+            "cwd": "packages\\sqflite_links",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sqflite_links (profile mode)",
+            "cwd": "packages\\sqflite_links",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sqflite_links (release mode)",
+            "cwd": "packages\\sqflite_links",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

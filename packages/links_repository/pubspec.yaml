@@ -1,0 +1,16 @@
+name: links_repository
+description: A repository that handles link related requests.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  links_api:
+    path: ../links_api
+
+dev_dependencies:
+  mocktail: ^0.3.0
+  test: ^1.21.4
+  very_good_analysis: ^3.0.2
