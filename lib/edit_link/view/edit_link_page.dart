@@ -224,6 +224,13 @@ class _TitleField extends StatelessWidget {
         labelText: l10n.editLinkTitleLabel,
         hintText: hintText,
         border: OutlineInputBorder(),
+        enabledBorder: OutlineInputBorder(
+          borderSide: new BorderSide(
+              color: Theme.of(context).brightness == Brightness.light
+                  ? LinkSaverLighTheme().color
+                  : LinkSaverDarkTheme().color,
+              width: 1.3),
+        ),
         prefixIcon: Icon(Icons.category),
       ),
       maxLength: 50,
@@ -255,6 +262,13 @@ class _UrlField extends StatelessWidget {
         labelText: l10n.editLinkLinkLabel,
         hintText: hintText,
         border: OutlineInputBorder(),
+        enabledBorder: OutlineInputBorder(
+          borderSide: new BorderSide(
+              color: Theme.of(context).brightness == Brightness.light
+                  ? LinkSaverLighTheme().color
+                  : LinkSaverDarkTheme().color,
+              width: 1.3),
+        ),
         prefixIcon: Icon(Icons.link),
       ),
       inputFormatters: [

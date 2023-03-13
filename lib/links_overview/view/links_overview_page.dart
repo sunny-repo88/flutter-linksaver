@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:link_saver/collection/list_collection/list_collection_page.dart';
 import 'package:link_saver/edit_link/view/edit_link_page.dart';
+import 'package:link_saver/helpers/AdHelper.dart';
 import 'package:link_saver/home/home.dart';
 import 'package:link_saver/l10n/l10n.dart';
 import 'package:link_saver/links_overview/links_overview.dart';
@@ -52,7 +53,8 @@ class _LinksOverviewViewState extends State<LinksOverviewView> {
   Widget customSearchBar = const Text('Link Saver');
   bool inFilterMode = false;
 
-  final String _adUnitId = 'ca-app-pub-3940256099942544/6300978111';
+  final String _adUnitId =
+      AdHelper.getAdmobAdId(adsName: Ads.bannerAdLinksOverviewId);
 
   @override
   void initState() {

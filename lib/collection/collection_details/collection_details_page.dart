@@ -10,6 +10,7 @@ import 'package:link_saver/collection/collection_details/bloc/collection_details
 import 'package:link_saver/collection/collection_details/widgets/collection_details_action_dialog.dart';
 import 'package:link_saver/collection/collection_details/widgets/link_action_dialog.dart';
 import 'package:link_saver/edit_link/view/edit_link_page.dart';
+import 'package:link_saver/helpers/AdHelper.dart';
 import 'package:link_saver/l10n/l10n.dart';
 import 'package:link_saver/links_overview/links_overview.dart';
 import 'package:link_saver/links_overview/widgets/link_list_tile.dart';
@@ -44,7 +45,8 @@ class CollectionDetailsView extends StatefulWidget {
 class _CollectionDetailsViewState extends State<CollectionDetailsView> {
   BannerAd? _bannerAd;
 
-  final String _adUnitId = 'ca-app-pub-3940256099942544/6300978111';
+  final String _adUnitId =
+      AdHelper.getAdmobAdId(adsName: Ads.bannerAdCollectionDetailsId);
 
   @override
   void initState() {

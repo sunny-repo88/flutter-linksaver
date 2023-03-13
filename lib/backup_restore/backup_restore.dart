@@ -127,7 +127,7 @@ class _BackUpRestoreState extends State<BackUpRestore> {
                               'Last Backup Date : ${lastBackupDate != '' ? lastBackupDate : 'None'}'),
                         ),
                         Text(
-                            'Back up your links to Google Drive. You can restore them when you reinstall SaveLinker. Your Links will also back up to your phones\'s internal storage.'),
+                            'Back up your links to Google Drive. You can restore them when you reinstall Link Saver. Your Links will also back up to your phones\'s internal storage.'),
                         Padding(
                           padding: const EdgeInsets.only(top: 16.0),
                           child: Row(

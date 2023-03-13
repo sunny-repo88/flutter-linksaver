@@ -10,6 +10,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:link_saver/collection/add_collection/add_collection_page.dart';
 import 'package:link_saver/collection/collection_details/collection_details_page.dart';
 import 'package:link_saver/collection/list_collection/bloc/list_collection_bloc.dart';
+import 'package:link_saver/helpers/AdHelper.dart';
 import 'package:link_saver/l10n/l10n.dart';
 import 'package:link_saver/theme/theme.dart';
 import 'package:link_saver/widgets/snackbar.dart';
@@ -47,7 +48,8 @@ class ListCollectionsView extends StatefulWidget {
 class _ListCollectionsViewState extends State<ListCollectionsView> {
   BannerAd? _bannerAd;
 
-  final String _adUnitId = 'ca-app-pub-3940256099942544/6300978111';
+  final String _adUnitId =
+      AdHelper.getAdmobAdId(adsName: Ads.bannerAdListCollectionId);
 
   @override
   void initState() {

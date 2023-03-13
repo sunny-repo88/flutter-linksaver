@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:link_saver/backup_restore/backup_restore.dart';
+import 'package:link_saver/helpers/AdHelper.dart';
 import 'package:link_saver/helpers/restart_app_management.dart';
 import 'package:link_saver/helpers/LocalStorageLinkSaver.dart';
 import 'package:link_saver/l10n/l10n.dart';
@@ -48,9 +49,8 @@ class SettingsPageView extends StatefulWidget {
 class _SettingsPageViewState extends State<SettingsPageView> {
   BannerAd? _bannerAd;
 
-  final String _adUnitId = Platform.isAndroid
-      ? 'ca-app-pub-3940256099942544/6300978111'
-      : 'ca-app-pub-3940256099942544/2934735716';
+  final String _adUnitId =
+      AdHelper.getAdmobAdId(adsName: Ads.bannerAdSettingId);
 
   @override
   void initState() {
